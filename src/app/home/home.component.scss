@@ -1,0 +1,131 @@
+
+
+.content {
+    height: 90vh;
+    width: 100%;
+    border: 1px dashed gray;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    .criteria-panel {
+        height: 100%;
+        font-family: inter;
+
+        .criteria-header {
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 30px;
+            position: relative;
+            top: 5%;
+            left: 5%;
+        }
+
+        .criteria-body {
+            top: 6%;
+            position: relative;
+            font-weight: 200;
+            width: 75%;
+            left: 5%;
+
+            .bullet-points {
+                font-style: italic;
+                font-size: 20px;
+                font-weight: 00;
+                .bullet {
+                    margin-top: 5%;
+                }
+                ul {
+                    margin: 0;
+                    li {
+                        margin-bottom: 10px;
+                        font-weight: 300;
+                        font-size: 20px;
+                    }
+                }
+                ul.dashed {
+                    list-style-type: none;
+                }
+                ul.dashed > li {
+                    text-indent: -20px;
+                }
+                ul.dashed > li:before {
+                content: "-";
+                    text-indent: -20px;
+                }
+            }
+        }
+    }
+
+    .visualization-panel {
+        position: relative;
+
+        .visualization {
+            border: 5px solid black;
+            width: 95%;
+            height: 60%;
+            position: relative;
+            right: 0;
+            top: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .top-section {
+            position: absolute;
+            bottom: calc(10% + 60px);
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .top-button {
+                height: 100%;
+                width: 80%;
+                border-radius: 40px;
+                border: 2px solid gray;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Inter;
+                cursor: pointer;
+            }
+
+            .top-button:hover {
+                background-color: lightgray;
+                transition-duration: 200ms;
+            }
+        }
+        .bottom-section {
+            width: 100%;
+            height: 50px;
+            bottom: 9%;
+            position: absolute;
+            white-space: nowrap;
+            overflow-x: scroll;
+
+            .bottom-button {
+                height: 90%;
+                width: 15%;
+                border-radius: 40px;
+                border: 2px solid gray;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Inter;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .bottom-button:hover {
+                background-color: lightgray;
+                transition-duration: 200ms;
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+<div class="title">
+    <div class="title-text" (click)="nav.home()">Morrstar</div>  
+    <div class="title-line"></div>
+    <div class="title-button one" routerLink="/journey">Discovery Journey</div>
+    <div class="title-button two" routerLink="/results">Results</div>
+    <div class="title-button three" (click)="nav.starhouseNavigate();">Star House</div>
+</div>
+  
+  <div class="content">
+    <div class="criteria-panel">
+      <div class="criteria-header">
+        Criteria
+      </div>
+      <div class="criteria-body">
+        Utilized models analyzed and interpreted a variety of relevant datasets including...
+        <div class="bullet-points">
+          <ul class="bullet dashed">
+            <li>
+              Unemployment rates
+            </li>
+            <li>
+              Cost Of Living
+            </li>
+            <li>
+              Unemployment rates
+            </li>
+            <li>
+              Youth shelter beds currently available
+            </li>
+            <li>
+            Child Maltreatment Rates
+            </li>
+            <li>
+            Mortgage Rates
+            </li>
+            <li>
+            SNAP fund distributions
+            </li>
+            <li>
+            Overdose mortality rates
+            </li>
+            <li>
+            General homeless populations
+            </li>
+            <li>
+            Black homeless populations
+            </li>
+            <li>
+              Homeless male populations
+            </li>
+            <li>
+              Homeless youth populations
+            </li>
+            <li>
+              Mental health affliction distributions
+            </li>
+          </ul>
+          and more...
+        </div>
+      </div>
+    </div>
+    <div class="visualization-panel">
+      <div class="visualization">
+        <img [src]='"assets/figures/"+picId+".png"'>
+      </div>
+      <div class="visualization-button-group">
+          <div class="top-section">
+              <div class="top-button" (click)="picId='fig0'">
+                Full Results
+              </div>
+          </div>
+          <div class="bottom-section">
+            <div class="bottom-button" (click)="picId='fig1'">Feature 1</div>
+            <div class="bottom-button" (click)="picId='fig2'">Feature 2</div>
+            <div class="bottom-button" (click)="picId='fig3'">Feature 3</div>
+            <div class="bottom-button" (click)="picId='fig4'">Feature 4</div>
+            <div class="bottom-button" (click)="picId='fig5'">Feature 5</div>
+            <div class="bottom-button" (click)="picId='fig6'">Feature 6</div>
+            <div class="bottom-button" (click)="picId='fig7'">Feature 7</div>
+            <div class="bottom-button" (click)="picId='fig8'">Feature 8</div>
+            <div class="bottom-button" (click)="picId='fig9'">Feature 9</div>
+            <div class="bottom-button" (click)="picId='fig10'">Feature 10</div>
+            <div class="bottom-button" (click)="picId='fig11'">Feature 11</div>
+            <div class="bottom-button" (click)="picId='fig12'">Feature 12</div>
+            <div class="bottom-button" (click)="picId='fig13'">Feature 13</div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>

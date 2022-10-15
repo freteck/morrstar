@@ -1,0 +1,59 @@
+@import url('assets/fonts/inter/inter.css');
+
+.title {
+    font-family: inter;
+    font-weight: 700;
+    display: inline-flex;
+    width: 100%;
+    font-size: 50px;
+    align-items: center;
+    height: 10%;
+    position: relative;
+    left: 0;
+    color: #003594;
+
+    .title-text {
+        user-select: none;
+        cursor: pointer;
+    }
+    .title-line {
+        background-color: black;
+        height: 3px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .title-button {
+        width: 15%;
+        height: 35px;
+        position: absolute;
+        border: 3px solid black;
+        font-size: 15px;
+        background: white;
+        display: flex;
+        color: black;
+        justify-content: center;
+        border-radius: 20px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .title-button:hover {
+        background-color: lightgray;
+    }
+
+    --left-start: 20vw;
+    .one {
+        left: calc(var(--left-start) + 20vw);
+    }
+
+    .two {
+        left: calc(var(--left-start) + 40vw);
+
+    }
+
+    .three {
+        left: calc(var(--left-start) + 60vw);
+    }
+}
